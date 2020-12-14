@@ -20,6 +20,6 @@ Before building the infrastructure, you must [build the frontend](#building-the-
 
 ```
 cd infrastructure
-yarn install
-yarn cdk deploy
+yarn cdk synth -c account_id=12345 -c zome_domain_name=foo.com --profile my-aws-profile
+yarn cdk deploy -c account_id=12345 -c zome_domain_name=foo.com --profile my-aws-profile
 ```
